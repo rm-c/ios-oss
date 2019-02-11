@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -59,6 +59,7 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DI6-Zp-Yoj">
                                                                 <rect key="frame" x="0.0" y="0.0" width="360" height="44"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="facebook_login_button"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="44" id="wYA-Q6-Bw3"/>
                                                                 </constraints>
@@ -84,6 +85,7 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcm-YK-ZfH">
                                                                 <rect key="frame" x="0.0" y="0.0" width="360" height="44"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="login_button"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="44" id="IVh-ao-BJi"/>
                                                                 </constraints>
@@ -97,6 +99,7 @@
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytH-Nw-2z0">
                                                                 <rect key="frame" x="0.0" y="50" width="360" height="44"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="signup_button"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="44" id="rmm-8H-xbE"/>
                                                                 </constraints>
@@ -110,6 +113,7 @@
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Q6Z-wy-WZo">
                                                                 <rect key="frame" x="0.0" y="100" width="360" height="140"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="disclaimer_button"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="m5W-d1-nrw"/>
                                                                 </constraints>
@@ -121,6 +125,7 @@
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="login_tout_view"/>
                                         <constraints>
                                             <constraint firstItem="UHD-eb-qXC" firstAttribute="leading" secondItem="PSN-BI-sXu" secondAttribute="leading" id="Kar-69-f5I"/>
                                             <constraint firstItem="UHD-eb-qXC" firstAttribute="trailing" secondItem="PSN-BI-sXu" secondAttribute="trailing" id="O59-tj-qKU"/>
@@ -358,6 +363,9 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="signup_view">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                         <constraints>
                             <constraint firstItem="uSk-gc-no0" firstAttribute="top" secondItem="E27-lb-1hH" secondAttribute="topMargin" constant="24" id="Rm8-5j-53f"/>
                             <constraint firstItem="uSk-gc-no0" firstAttribute="bottom" secondItem="ZfQ-Dw-htn" secondAttribute="top" id="Upf-p0-WDn"/>
@@ -419,6 +427,7 @@
                                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rfF-KC-Vmh">
                                                                 <rect key="frame" x="0.0" y="15.5" width="301" height="19"/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="email_textfield"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
                                                             </textField>
@@ -441,6 +450,7 @@
                                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="A3g-DY-QEE">
                                                                 <rect key="frame" x="0.0" y="15.5" width="301" height="19"/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="password_textfield"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                                             </textField>
@@ -460,6 +470,9 @@
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstItem="Ejt-b0-1Ve" firstAttribute="leading" secondItem="Vjk-Pm-lN3" secondAttribute="leading" constant="12" id="45y-52-RQG"/>
                                             <constraint firstItem="OeS-as-xL5" firstAttribute="centerX" secondItem="Vjk-Pm-lN3" secondAttribute="centerX" id="7gC-28-sm4"/>
@@ -497,6 +510,9 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="login_view">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                         <constraints>
                             <constraint firstItem="NlS-Xy-Gop" firstAttribute="top" relation="greaterThanOrEqual" secondItem="WAW-aN-vGd" secondAttribute="bottom" id="6kB-eV-1SA"/>
                             <constraint firstItem="WAW-aN-vGd" firstAttribute="leading" secondItem="bKW-b9-tc9" secondAttribute="leadingMargin" id="Jwe-i0-zDX"/>

@@ -24,6 +24,8 @@ internal final class LoginViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    _ = self.isAccessibilityElement = false
+
     let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
     self.view.addGestureRecognizer(tap)
 
