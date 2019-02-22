@@ -140,8 +140,7 @@
 		7758A8372097BADF0018B96D /* DiscoveryProjectCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7758A83120979BE50018B96D /* DiscoveryProjectCategoryView.swift */; };
 		7758A8382097BB090018B96D /* DiscoveryProjectCategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7758A8352097A8180018B96D /* DiscoveryProjectCategoryView.xib */; };
 		776B6F70215183A400AB0652 /* ChangeEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776B6F6F215183A400AB0652 /* ChangeEmailViewController.swift */; };
-		776E31CE2147DE6A00EFC09A /* Stripe.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 775229A72146805400595846 /* Stripe.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		776E31CF2147DE8000EFC09A /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775229A72146805400595846 /* Stripe.framework */; };
+		7773F0662220A7D00010D542 /* Stripe.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 775229A72146805400595846 /* Stripe.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		77752F5E219B39EA00E7DA7D /* SettingsAccountWarningCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77752F5D219B39EA00E7DA7D /* SettingsAccountWarningCell.swift */; };
 		77752F97219B3D7300E7DA7D /* SettingsAccountWarningCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77752F96219B3D7300E7DA7D /* SettingsAccountWarningCell.xib */; };
 		777C67BB220A0FA5009F8D42 /* SettingsTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C67BA220A0FA5009F8D42 /* SettingsTableViewHeader.swift */; };
@@ -1760,13 +1759,23 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7773F0652220A7BB0010D542 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7773F0662220A7D00010D542 /* Stripe.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7D1F9C21C850DDE000D41D5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				776E31CE2147DE6A00EFC09A /* Stripe.framework in Embed Frameworks */,
 				D0745B061EEB09E500FA53D3 /* Curry.framework in Embed Frameworks */,
 				A73924011D272312004524C3 /* Kickstarter_Framework.framework in Embed Frameworks */,
 				80762E431D071CB70074189D /* AlamofireImage.framework in Embed Frameworks */,
@@ -2956,7 +2965,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				776E31CF2147DE8000EFC09A /* Stripe.framework in Frameworks */,
 				A73924001D27230B004524C3 /* Kickstarter_Framework.framework in Frameworks */,
 				A7BA543E1E1E493600E54377 /* LiveStream.framework in Frameworks */,
 				A7722F401D2D3B6B0049BCDC /* FBSDKCoreKit.framework in Frameworks */,
@@ -4725,6 +4733,8 @@
 				A7C7959A1C873A870081977F /* Frameworks */,
 				A7C7959B1C873A870081977F /* Headers */,
 				A7C7959C1C873A870081977F /* Resources */,
+				7773F0652220A7BB0010D542 /* Embed Frameworks */,
+				7773F0642220A7900010D542 /* Integrate Stripe SDK */,
 			);
 			buildRules = (
 			);
@@ -4746,7 +4756,6 @@
 				A7D1F9421C850B7C000D41D5 /* Frameworks */,
 				A7D1F9431C850B7C000D41D5 /* Resources */,
 				A7D1F9C21C850DDE000D41D5 /* Embed Frameworks */,
-				77B1A2FF21467B200042AA8F /* Integrate Stripe Dynamic Framework */,
 				16344A3D20B4F6B700610E8D /* Swiftlint */,
 				7713662C20E4048B00D7D7AD /* Fabric */,
 			);
@@ -5591,14 +5600,18 @@
 			shellPath = /bin/sh;
 			shellScript = "bash \"${SRCROOT}/bin/fabric.sh\"\n";
 		};
-		77B1A2FF21467B200042AA8F /* Integrate Stripe Dynamic Framework */ = {
+		7773F0642220A7900010D542 /* Integrate Stripe SDK */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
 			);
-			name = "Integrate Stripe Dynamic Framework";
+			name = "Integrate Stripe SDK";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
