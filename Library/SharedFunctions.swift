@@ -164,6 +164,7 @@ internal func is1PasswordButtonHidden(_ isHidden: Bool) -> Bool {
 }
 
 public func ksr_isOSVersionAvailable(_ version: Double) -> Bool {
+   
   switch version {
   case 12.0...:
     if #available(iOS 12.0, *) { return true }
